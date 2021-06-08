@@ -1,3 +1,4 @@
+/*sélecteur universel*/
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +8,82 @@
 *::before,
 *::after{
     box-sizing: inherit;
-    font-size: 62,5%;
 }
+
+/*inclus le padding dans le calcul
+de la hauteur et la largeur.Les navigateurs 
+vont inclure le padding dans le calcul de 
+la hauteur et de la largeur
+Evite des bugs de positionnement... */
 
 .html{
     box-sizing: border-box;
-    font-size: 62,5%;
-    
+    font-size: 62.5%;
+/*10/16 = 0,625 - etchinque pour une meilleure */   
 
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color:#777 ;
+    background-image: linear-gradient(to right bottom, #31708e, #508575);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:100vh ;
+}
+/*----------------------Header----------------------*/
+
+.container{
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color:#faf9f9;
+    box-shadow:0 2rem 6rem rgba(0,0,0,0,0,3);
+    min-height: 50rem;
+}
+.header{
+    font-size:1,4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height:3,25rem;
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+.search{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+/*.searchInput{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    margin-right: -3,25rem ;
+}
+
+.searchButon{
+    border: none;
+    background-color: #f4f2f2;
+}
+
+.searchIcon{
+    height: 2rem;
+    width: 2rem;
+    fill: #777;
 }
