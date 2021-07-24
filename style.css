@@ -70,12 +70,6 @@ body {
     justify-content: center;
 }
 
-.searchIcon {
-    height: 2rem;
-    width: 2rem;
-    fill: #777;
-}
-
 .searchInput {
     font-family: inherit;
     font-size: inherit;
@@ -92,3 +86,12 @@ body {
     border: none;
     background-color:#f4f2f2;
 }
+
+.searchIcon {
+    height: 2rem;
+    width: 2rem;
+    fill: #777;
+}
+
+
+
